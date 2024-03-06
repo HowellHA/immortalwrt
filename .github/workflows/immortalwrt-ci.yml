@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Initialization environment
-        run: bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
+        run: sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
         
       - name: Checkout
         uses: actions/checkout@v3
